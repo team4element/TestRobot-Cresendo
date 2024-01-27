@@ -1,8 +1,6 @@
 package frc.robot.subsystems;
 
 import com.ctre.phoenix6.hardware.TalonFX;
-
-import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.Constants.OperatorConstants;
 
 public class Shooter {
@@ -16,6 +14,12 @@ public class Shooter {
     public void spin(double speed) {
         leftMotor.set(speed);
         rightMotor.set(speed);
+    }
+
+    public void motorOff() {
+        leftMotor.stopMotor();
+        rightMotor.stopMotor();
+
     }
 
 }

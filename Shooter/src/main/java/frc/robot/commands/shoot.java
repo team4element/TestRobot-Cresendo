@@ -13,7 +13,8 @@ public class shoot extends Command {
 
   public shoot(Shooter shooter) {
 
-    m_shooter = shooter;
+    this.m_shooter = shooter;
+    // addRequirements(m_shooter);
 
     // Use addRequirements() here to declare subsystem dependencies.
   }
@@ -33,7 +34,9 @@ public class shoot extends Command {
 
   // Called once the command ends or is interrupted.
   @Override
-  public void end(boolean interrupted) {
+  public void end(boolean interupted) {
+    m_shooter.motorOff();
+
   }
 
   // Returns true when the command should end.
