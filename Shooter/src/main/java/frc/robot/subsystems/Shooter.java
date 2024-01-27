@@ -7,17 +7,15 @@ import frc.robot.Constants.OperatorConstants;
 
 public class Shooter {
 
-    public Shooter() {}
+    public Shooter() {
+    }
 
     public static TalonFX leftMotor = new TalonFX(OperatorConstants.kLeftMotor);
     public static TalonFX rightMotor = new TalonFX(OperatorConstants.kRightMotor);
 
-    public void spin(double speed){
+    public void spin(double speed) {
         leftMotor.set(speed);
         rightMotor.set(speed);
     }
 
-  
-
-    
 }
