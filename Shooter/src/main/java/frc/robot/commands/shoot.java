@@ -14,11 +14,15 @@ public class shoot extends Command {
   public shoot(Shooter shooter) {
 
     this.m_shooter = shooter;
-    // addRequirements(m_shooter);
+    addRequirements(m_shooter);
 
     // Use addRequirements() here to declare subsystem dependencies.
   }
 
+  private void addRequirements(Shooter m_shooter){
+    throw new UnsupportedOperationException("Unimplemented method'addRequirements'");
+
+  }
   // Called when the command is initially scheduled.
   @Override
   public void initialize() {
