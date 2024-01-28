@@ -11,11 +11,11 @@ public class Shooter {
     }
 
     public static TalonFX leftMotor = new TalonFX(OperatorConstants.kLeftMotor);
-    public static TalonFX rightMotor = new TalonFX(OperatorConstants.kRightMotor);
+   // public static TalonFX rightMotor = new TalonFX(OperatorConstants.kRightMotor);
 
     public void spin(double speed) {
         leftMotor.set(speed);
-        rightMotor.set(speed);
+       // rightMotor.set(speed);
     }
 
 }
